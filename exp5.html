@@ -1,165 +1,216 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SEVENTEEN – Carat Fan Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- SEVENTEEN K-Pop Group Fan Page - HTML5 Experiment -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> THABITHA Cake Shop - Order Bill</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffd1dc, #cceeff);
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #ffe6e6, #fff0f0);
+      padding: 20px;
+    }
+    .header {
+      background: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 20px;
+    }
+    .cake-gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .cake-item {
+      text-align: center;
+      margin: 10px;
+    }
+    .cake-item img {
+      width: 120px;
+      height: 120px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .cake-item p {
+      margin-top: 8px;
+      font-weight: bold;
       color: #333;
     }
-    header, footer {
-      background-color: #ffffffaa;
-      text-align: center;
-      padding: 1rem;
+    .order-form {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: 0 auto 20px;
     }
-    nav ul {
-      list-style: none;
+    .form-title {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #8B0000;
+    }
+    .cake-input {
       display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 0;
+      justify-content: space-between;
+      align-items: center;
+      margin: 12px 0;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 8px;
     }
-    nav a {
-      text-decoration: none;
-      color: #8e24aa;
+    .cake-input label {
       font-weight: bold;
+      color: #444;
     }
-    nav a:hover {
-      color: #c2185b;
-    }
-    section {
-      padding: 2rem;
+    .cake-input input {
+      width: 80px;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
       text-align: center;
     }
-    img.main-img {
-      max-width: 90%;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    .place-order-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background: #007BFF;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .place-order-btn:hover {
+      background: #0056b3;
+    }
+    .bill {
+      background: #e8f5e9;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 500px;
       margin: 20px auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-    table {
-      width: 80%;
-      margin: 2rem auto;
-      border-collapse: collapse;
-      background: #fff9fa;
+    .bill h3 {
+      color: #2e7d32;
+      margin-bottom: 10px;
     }
-    th, td {
-      border: 1px solid #aaa;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background-color: #f8bbd0;
-      color: #6a1b9a;
-    }
-    ul.songlist {
-      text-align: left;
-      max-width: 600px;
-      margin: 0 auto;
-      list-style-type: square;
-    }
-    .note {
-      color: #666;
-      font-size: 0.9em;
+    #totalPrice {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d32f2f;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>💎 SEVENTEEN Fan Page 💎</h1>
-    <p>A tribute by a proud <strong>Carat</strong></p>
-    <nav>
-      <ul>
-        <li><a href="#members">Members</a></li>
-        <li><a href="#carat">Carat Love</a></li>
-        <li><a href="#bongbongie">Bongbongie</a></li>
-        <li><a href="#music">Songs</a></li>
-        
+  <div class="header">CAKE SHOP</div>
 
-      </ul>
-    </nav>
-  </header>
+  <!-- Cake Gallery -->
+  <div class="cake-gallery">
+    <div class="cake-item">
+      <img src="E:\WEB TECHNOLOGY\DSVBKBX\WEB.png" alt="Rainbow Cake">
+      <p>Rainbow Cake - Rs. 300</p>
+    </div>
+    <div class="cake-item">
+      <img src="E:\WEB TECHNOLOGY\DSVBKBX\WEB2.png" alt="Chocolate Cake">
+      <p>Chocolate Cake - Rs. 200</p>
+    </div>
+    <div class="cake-item">
+      <img src="E:\WEB TECHNOLOGY\DSVBKBX\WEB3.png" alt="Red Velvet">
+      <p>Red Velvet Cake - Rs. 250</p>
+    </div>
+    <div class="cake-item">
+      <img src="E:\WEB TECHNOLOGY\DSVBKBX\WEB4.png" alt="Black Forest">
+      <p>Black Forest Cake - Rs. 350</p>
+    </div>
+  </div>
 
+  <!-- Order Form -->
+  <div class="order-form">
+    <div class="form-title">Order Cake</div>
 
-  <section id="carat">
-    <h2>💖 SEVENTEEN x CARATS 💖</h2>
-    <img class="main-img" src="C:\Users\THABITHA\Downloads\SEVENTEEN.jpg" alt="“Forever SEVENTEEN, Forever CARAT”
-    Always CARATs and SEVENTEEN Together 💗" width="800"
-    section id="carat">
-    <h2>💖 CARATS BOMB 💖</h2>
-    <img class="main-img" src="C:\Users\THABITHA\Downloads\carat bomb.jpg" alt="Carat Bong Lightstick" width="600">
-    <p>Forever shining bright like diamonds. &hearts; #CARATs</p>
-    <p class="note">To write a less-than symbol in HTML, use <code>&amp;lt;</code> → &lt;</p>
-  </section>
+    <div class="cake-input">
+      <label>Rainbow Cake (Quantity)</label>
+      <input type="number" id="rainbowQty" min="0" value="0" oninput="updateTotal()">
+    </div>
 
-  
-  <section id="bongbongie">
-    <h2>Bongbongie: The Official Mascot</h2>
-    <p>Bongbongie is SEVENTEEN’s adorable and iconic mascot loved by all Carats! 🐰</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QLi7ekArDkh4yj7PJKj9zLbazyq0WM5gQA&s" alt="Bongbongie" width="600">
-</section>
+    <div class="cake-input">
+      <label>Chocolate Cake (Quantity)</label>
+      <input type="number" id="chocoQty" min="0" value="0" oninput="updateTotal()">
+    </div>
 
+    <div class="cake-input">
+      <label>Red Velvet Cake (Quantity)</label>
+      <input type="number" id="redvelvetQty" min="0" value="0" oninput="updateTotal()">
+    </div>
 
-  <section id="members">
-    <h2>🌟 SEVENTEEN Members by Unit</h2>
-    <img class="main-img" src="https://m.media-amazon.com/images/I/71beTqoV5SL._UF1000,1000_QL80_.jpg" alt="SEVENTEEN Members Image">
-    <table>
-      <thead>
-        <tr><th>Unit</th><th>Members</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>hiphop unit</td><td>S.Coups, Wonwoo, Mingyu, Vernon</td></tr>
-        <tr><td>Performance unit</td><td>Hoshi, Jun, The8, Dino</td></tr>
-        <tr><td>Vocal unit</td><td>Woozi, Jeonghan, Joshua, DK, Seungkwan</td></tr>
-      </tbody>
-    </table>
-  </section>
+    <div class="cake-input">
+      <label>Black Forest Cake (Quantity)</label>
+      <input type="number" id="blackforestQty" min="0" value="0" oninput="updateTotal()">
+    </div>
 
-  <section id="music">
-    <h2>🎶 SEVENTEEN's Top Songs</h2>
-    <ul class="songlist">
-      <li>Don't Wanna Cry</li>
-      <li>Very Nice (아주 NICE)</li>
-      <li>Hot</li>
-      <li>Left & Right</li>
-      <li>Super</li>
-      <li>Clap</li>
-      <li>Ready to Love</li>
-      <li>Circles</li>
-    </ul>
+    <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+  </div>
 
-     <section id="message">
-  <h2>💌 Send a Message to SEVENTEEN 💌</h2>
-  <form>
-    <label for="member">To (Member Name):</label><br>
-    <input type="text" id="member" name="member" placeholder="e.g., Hoshi, DK, Woozi" required><br><br>
+  <!-- Bill Display -->
+  <div class="bill">
+    <h3>Purchase Order Bill!!!</h3>
+    <p>Total Price: Rs. <span id="totalPrice">0</span></p>
+  </div>
 
-    <label for="message">Your Message:</label><br>
-    <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your love and support here 💖" required></textarea><br><br>
+  <script>
+    // Cake prices
+    const prices = {
+      rainbow: 300,
+      chocolate: 200,
+      redvelvet: 250,
+      blackforest: 350
+    };
 
-    <button type="submit">Send Message ✨</button>
-  </form>
-</section>
+    // Update total in real-time
+    function updateTotal() {
+      let rainbow = parseInt(document.getElementById("rainbowQty").value) || 0;
+      let chocolate = parseInt(document.getElementById("chocoQty").value) || 0;
+      let redvelvet = parseInt(document.getElementById("redvelvetQty").value) || 0;
+      let blackforest = parseInt(document.getElementById("blackforestQty").value) || 0;
 
+      let total = 
+        (rainbow * prices.rainbow) +
+        (chocolate * prices.chocolate) +
+        (redvelvet * prices.redvelvet) +
+        (blackforest * prices.blackforest);
 
-    <section id="contact">
-        <h2>Contact Fanbase</h2>
-        <p>Follow SEVENTEEN on <a href="https://instagram.com/saythename_17" target="_blank">Instagram</a> or <a href="https://weverse.io/seventeen" target="_blank">Weverse</a>.</p>
-    </section>
+      document.getElementById("totalPrice").innerText = total;
+    }
 
-    <p>Learn more about SEVENTEEN on <a href="https://en.wikipedia.org/wiki/Seventeen_(South_Korean_band)" target="_blank">Wikipedia</a>.</p>
-  </section>
+    // Place Order Button
+    function placeOrder() {
+      let total = document.getElementById("totalPrice").innerText;
+      if (total > 0) {
+        alert("Order Placed Successfully!\nTotal Amount: Rs. " + total);
+      } else {
+        alert("Please select at least one cake!");
+      }
+    }
 
-  <footer>
-    <p>&copy; 2025 SEVENTEEN Fan Page | Created with 💜 by a Carat</p>
-  </footer>
-
+    // Initialize
+    updateTotal();
+  </script>
 </body>
 </html>
-
